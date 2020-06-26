@@ -1,0 +1,56 @@
+.header {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-base;
+
+    &__title {
+        font-size: 10rem;
+        font-weight: 300;
+        color: $color-primary;
+
+        @media screen and (max-width:$bp-small){
+            font-size: 7rem;
+            display: inline-block;
+        }
+        @media screen and (max-width:$bp-smallest){
+            font-size: 5rem;
+        }
+    }
+
+    &__text {
+        color: $color-secondary-light;
+        font-size: 3rem;
+        font-weight: 300;
+        margin: .3rem 2rem;
+        @media screen and (max-width:$bp-small){
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width:$bp-smallest){
+            font-size: 2rem;
+        }
+    }
+
+    &__score {
+        font-weight: bold;
+    }
+
+    
+}
+
+#scoreId {
+    color: $color-secondary;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: .5rem;
+    font-weight: bold;
+}
+
+button {
+    height: 4rem;
+    width: 8rem;
+    outline: none;
+    text-decoration: none;
+}

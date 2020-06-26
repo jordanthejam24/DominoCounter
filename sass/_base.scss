@@ -1,0 +1,35 @@
+$color-primary: #557a95;
+$color-primary-light: #7395ae;
+
+$color-secondary: #5d5c61;
+$color-secondary-light: #938e94;
+$color-base: #f9f9fa;
+
+$color-white-1: white;
+
+//breakpoints for responsive media
+$bp-largest: 75em; //1200px breakpoint variable
+$bp-large: 68.75em; //1100px breakpoint variable
+$bp-medium: 56.25em; //900px breakpoint variable
+$bp-small: 37.5em; //600px breakpoint variable
+$bp-smallest: 30em;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: sans-serif;
+    // background-color: $color-base;
+
+    @media only screen and(max-width:$bp-large) {
+        font-size: 50%
+    }
+}
+

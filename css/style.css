@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: sans-serif; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
+
+.header {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9fa; }
+  .header__title {
+    font-size: 10rem;
+    font-weight: 300;
+    color: #557a95; }
+    @media screen and (max-width: 37.5em) {
+      .header__title {
+        font-size: 7rem;
+        display: inline-block; } }
+    @media screen and (max-width: 30em) {
+      .header__title {
+        font-size: 5rem; } }
+  .header__text {
+    color: #938e94;
+    font-size: 3rem;
+    font-weight: 300;
+    margin: .3rem 2rem; }
+    @media screen and (max-width: 37.5em) {
+      .header__text {
+        font-size: 1.5rem; } }
+    @media screen and (max-width: 30em) {
+      .header__text {
+        font-size: 2rem; } }
+  .header__score {
+    font-weight: bold; }
+
+#scoreId {
+  color: #5d5c61;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: .5rem;
+  font-weight: bold; }
+
+button {
+  height: 4rem;
+  width: 8rem;
+  outline: none;
+  text-decoration: none; }
+
+.counter {
+  height: 75vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 5rem 5rem 0 5rem; }
+  @media screen and (max-width: 30em) {
+    .counter {
+      margin: 3rem 2rem 0 2rem; } }
+  @media screen and (max-width: 37.5em) {
+    .counter {
+      margin: 2rem 2rem 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr; } }
+
+.domImg {
+  max-width: 100%;
+  height: auto; }
+
+.domino {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin: 1rem;
+  color: white;
+  font-weight: 400;
+  font-size: 3rem;
+  border: 1px solid black;
+  transition: all .2s; }
+
+.domino:hover {
+  background-color: #7395ae; }
+
+.domino:active {
+  background-color: #938e94; }

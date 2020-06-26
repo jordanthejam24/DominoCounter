@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dominoes Counter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="header__title">Domino Counter</h1>
+            <h4 class="header__text">Click the number to add to your score</h4>
+            <h4 class="header__text header__score">
+                Score: <span id="scoreId">0</span>&nbsp;
+                <button class="clear" onclick="clearScore()">Clear</button>
+            </h4>
+            
+        </div>
+
+        <div class="counter">
+            <div class="domino" id="1" onclick="addScore(1)">
+                <img src="img/1.PNG" class="domImg" alt="num">
+            </div>
+            <div class="domino" id="2" onclick="addScore(2)">
+                <img src="img/2.PNG" class="domImg" alt="num">
+            </div>
+            <div class="domino" id="3" onclick="addScore(3)">
+                <img src="img/3.PNG" class="domImg" alt="num">
+            </div>
+            <div class="domino" id="4" onclick="addScore(4)">
+                <img src="img/4.PNG" class="domImg" alt="num">
+            </div>
+            <div class="domino" id="5" onclick="addScore(5)">
+                <img src="img/5.PNG" class="domImg" alt="num">
+            </div>
+            <div class="domino" id="6" onclick="addScore(6)">
+                <img src="img/6.PNG" class="domImg" alt="num">
+            </div>
+            <div class="domino" id="7" onclick="addScore(7)">
+                <img src="img/7.PNG" class="domImg" alt="num">
+            </div>
+            <div class="domino" id="8" onclick="addScore(8)">
+                <img src="img/8.PNG" class="domImg" alt="num">
+            </div>
+            <div class="domino" id="9" onclick="addScore(9)">
+                <img src="img/9.PNG" class="domImg" alt="num">
+            </div>
+            <div class="domino" id="10" onclick="addScore(10)">
+                1<img src="img/10.PNG" class="domImg" alt="num">
+            </div>
+            <div class="domino" id="11" onclick="addScore(11)">
+                1<img src="img/11.PNG" class="domImg" alt="num">
+            </div>
+            <div class="domino" id="12" onclick="addScore(12)">
+                1<img src="img/12.PNG" class="domImg" alt="num">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

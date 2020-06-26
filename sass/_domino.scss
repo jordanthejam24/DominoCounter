@@ -1,0 +1,49 @@
+.counter {
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 5rem 5rem 0 5rem;
+    // grid-template-areas: 
+    //     "one-one one-two one-three",
+    //     "two-one two-two two-three",
+    //     "three-one three-two three-three",
+    //     "four-one four-two four-three",
+    //     "five-one"
+    // ;
+
+    @media screen and (max-width:$bp-smallest){
+        margin: 3rem 2rem 0 2rem;
+    }
+    @media screen and (max-width:$bp-small){
+        margin: 2rem 2rem 0 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+.domImg {
+    max-width: 100%;
+    height: auto;
+}
+.domino {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin: 1rem;
+    color: white;
+    font-weight: 400;
+    font-size: 3rem;
+    border: 1px solid black;
+
+    transition: all .2s;
+}
+
+.domino:hover {
+    background-color: $color-primary-light;
+}
+.domino:active {
+    background-color: $color-secondary-light;
+}
